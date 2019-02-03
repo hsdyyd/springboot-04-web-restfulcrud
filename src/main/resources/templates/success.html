@@ -6,6 +6,14 @@
 </head>
 <body>
     <h3>Success Page.</h3>
-    <div th:text=""></div>
+    <div id="id01" class="class01" th:id="${hello}" th:class="${hello}"  th:text="${hello}"></div>
+    <hr>
+    <div th:text="${tt}"></div>
+    <div th:utext="${tt}"></div>
+    <hr>
+    <h4 th:text="${user}" th:each="user:${users}"></h4>
+    <h4>
+        <span th:each="user:${users}">[[${user}]]</span>
+    </h4>
 </body>
 </html>
